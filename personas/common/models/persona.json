@@ -1,0 +1,47 @@
+{
+  "name": "persona",
+  "plural": "personas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "primer_nombre": {
+      "type": "string",
+      "required": true
+    },
+    "segundo_nombre": {
+      "type": "string",
+      "required": false
+    },
+    "primer_apellido": {
+      "type": "string",
+      "required": true
+    },
+    "segundo_apellido": {
+      "type": "string",
+      "required": false
+    },    
+    "fecha_nacimiento": {
+      "type": "date",
+      "required": false
+    },    
+    "estudios": {
+      "type": "string",
+      "required": false
+    },    
+    "sexo": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
